@@ -100,11 +100,11 @@ if result:
         output_language = "en"
     elif out_lang == "Español":
         output_language = "es"
-    elif in_lang == "Italiano":
+    elif out_lang == "Italiano":
         ouput_language = "it"
-    elif in_lang == "Frances":
+    elif out_lang == "Frances":
         output_language = "fr"
-    elif in_lang == "Ruso":
+    elif out_lang == "Ruso":
         output_language = "ru" 
     elif out_lang == "Coreano":
         output_language = "ko"
