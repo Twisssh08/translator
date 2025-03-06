@@ -19,7 +19,7 @@ st.title("TRADUCTOR.")
 st.subheader("Escucho lo que quieres traducir.")
 
 
-image = Image.open('OIG7.jpg')
+image = Image.open('catcatcat.png')
 
 st.image(image,width=300)
 with st.sidebar:
@@ -73,14 +73,18 @@ if result:
     text = str(result.get("GET_TEXT"))
     in_lang = st.selectbox(
         "Selecciona el lenguaje de Entrada",
-        ("Inglés", "Español", "Bengali", "Coreano", "Mandarín", "Japonés"),
+        ("Inglés", "Español", "Italiano", "Frances", "Ruso", "Coreano", "Mandarín", "Japonés"),
     )
     if in_lang == "Inglés":
         input_language = "en"
     elif in_lang == "Español":
         input_language = "es"
-    elif in_lang == "Bengali":
-        input_language = "bn"
+    elif in_lang == "Italiano":
+        input_language = "it"
+    elif in_lang == "Frances":
+        input_language = "fr"
+    elif in_lang == "Ruso":
+        input_language = "ru"
     elif in_lang == "Coreano":
         input_language = "ko"
     elif in_lang == "Mandarín":
@@ -96,8 +100,12 @@ if result:
         output_language = "en"
     elif out_lang == "Español":
         output_language = "es"
-    elif out_lang == "Bengali":
-        output_language = "bn"
+    elif in_lang == "Italiano":
+        input_language = "it"
+    elif in_lang == "Frances":
+        input_language = "fr"
+    elif in_lang == "Ruso":
+        input_language = "ru" 
     elif out_lang == "Coreano":
         output_language = "ko"
     elif out_lang == "Mandarín":
