@@ -24,14 +24,14 @@ image = Image.open('catcatcat.png')
 st.image(image,width=300)
 with st.sidebar:
     st.subheader("Traductor.")
-    st.write("Presiona el botón, cuando escuches la señal "
+    st.write("Presiona el botón que dice ´escuchar´ "
                  "habla lo que quieres traducir, luego selecciona"   
                  " la configuración de lenguaje que necesites.")
 
 
 st.write("Toca el Botón y habla lo que quires traducir")
 
-stt_button = Button(label=" Escuchar  🎤", width=300,  height=50)
+stt_button = Button(label=" Escuchar🎤", width=300,  height=50)
 
 stt_button.js_on_event("button_click", CustomJS(code="""
     var recognition = new webkitSpeechRecognition();
@@ -131,7 +131,6 @@ if result:
         tld = "com"
     elif english_accent == "Español":
         tld = "com.mx"
-    
     elif english_accent == "Reino Unido":
         tld = "co.uk"
     elif english_accent == "Estados Unidos":
