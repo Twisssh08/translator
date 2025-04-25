@@ -54,15 +54,15 @@ st.write("Toca el Botón y habla lo que quires traducir")
 stt_button = Button(label=" Escuchar🎤", 
                     width=300,  
                     height=50)
-    st.markdown("""
-    <style>
-    .bk-btn {
-        background-color: #4CAF50 !important;  /* Verde */
-        color: white !important;               /* Texto blanco */
-        font-weight: bold;
+ st.markdown("""
+<style>
+.bk-btn {
+    background-color: #4CAF50 !important;  /* Verde */
+    color: white !important;               /* Texto blanco */
+    font-weight: bold;
     }
-    </style>
-    """, unsafe_allow_html=True)
+</style>
+""", unsafe_allow_html=True)
 
 
 stt_button.js_on_event("button_click", CustomJS(code="""
