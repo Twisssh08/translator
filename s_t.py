@@ -35,8 +35,16 @@ st.subheader("Escucho lo que quieres traducir.")
 image = Image.open('catcatcat.png')
 
 st.image(image,width=300)
-st.subheader("Traductor.")
-st.write("Presiona el botón que dice ´escuchar´ "
+with st.sidebar:
+    st.markdown("""
+        <style>
+            {
+                background-color: #fbf343; 
+            }
+        </style>
+            """, unsafe_allow_html=True)
+    st.subheader("Traductor.")
+    st.write("Presiona el botón que dice ´escuchar´ "
                 "habla lo que quieres traducir, luego selecciona"   
                 " la configuración de lenguaje que necesites.")
 
