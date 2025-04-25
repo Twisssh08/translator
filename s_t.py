@@ -42,8 +42,8 @@ st.markdown("""
     }
     </style>
     """, unsafe_allow_html=True)
-    st.subheader("Traductor.")
-    st.write("Presiona el botón que dice ´escuchar´ "
+        st.subheader("Traductor.")
+        st.write("Presiona el botón que dice ´escuchar´ "
                  "habla lo que quieres traducir, luego selecciona"   
                  " la configuración de lenguaje que necesites.")
 
