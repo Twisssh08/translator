@@ -37,12 +37,13 @@ image = Image.open('catcatcat.png')
 st.image(image,width=300)
 with st.sidebar:
     st.markdown("""
-        <style>
-            {
-                background-color: #fbf343; 
-            }
-        </style>
-            """, unsafe_allow_html=True)
+    <style>
+    /* Cambia el fondo del sidebar */
+    [data-testid="stSidebar"] {
+        background-color: #d1e0e0;  /* color suave, puedes cambiarlo */
+    }
+    </style>
+    """, unsafe_allow_html=True)
     st.subheader("Traductor.")
     st.write("Presiona el botón que dice ´escuchar´ "
                 "habla lo que quieres traducir, luego selecciona"   
