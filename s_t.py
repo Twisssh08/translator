@@ -16,11 +16,11 @@ st.markdown(
     """
     <style>
     body {
-        background-color: #f0f2f6; /* Cambia este color según lo que desees */
+        background-color: linear-gradient(to right, #a1c4fd, #c2e9fb);
     }
 
     .stApp {
-        background-color: #f0f2f6; /* Asegura que el contenedor principal también lo tenga */
+        background-color: linear-gradient(to right, #a1c4fd, #c2e9fb);
     }
     </style>
     """,
