@@ -9,10 +9,23 @@ from PIL import Image
 import time
 import glob
 
-
-
 from gtts import gTTS
 from googletrans import Translator
+
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #f0f2f6; /* Cambia este color según lo que desees */
+    }
+
+    .stApp {
+        background-color: #f0f2f6; /* Asegura que el contenedor principal también lo tenga */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 
 st.title("TRADUCTOR.")
