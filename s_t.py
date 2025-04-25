@@ -34,9 +34,9 @@ st.subheader("Escucho lo que quieres traducir.")
 
 image = Image.open('catcatcat.png')
 
-    st.image(image,width=300)
-    st.subheader("Traductor.")
-    st.write("Presiona el botón que dice ´escuchar´ "
+st.image(image,width=300)
+st.subheader("Traductor.")
+st.write("Presiona el botón que dice ´escuchar´ "
                 "habla lo que quieres traducir, luego selecciona"   
                 " la configuración de lenguaje que necesites.")
 
