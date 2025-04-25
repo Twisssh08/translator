@@ -38,9 +38,8 @@ st.image(image,width=300)
 with st.sidebar:
     st.markdown("""
     <style>
-    /* Cambia el fondo del sidebar */
     [data-testid="stSidebar"] {
-        background-color: #d1e0e0;  /* color suave, puedes cambiarlo */
+        background-color: #fbf343;  
     }
     </style>
     """, unsafe_allow_html=True)
